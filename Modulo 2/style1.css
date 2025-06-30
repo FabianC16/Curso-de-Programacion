@@ -1,10 +1,4 @@
-.titulo_de_la_pagina { 
-font-size: 60px;
-color: turquoise;
-font-weight: 800;
-}
-
-.contenedor {
+.nombre {
     background-color: rgb(71, 49, 49);
     font-size: 60px;
 color: turquoise;
@@ -16,8 +10,16 @@ padding: 1%;
 margin: 10%;
 }
 
-.foto {
-border-radius: 10px;
-max-width: 50%;
 
+
+.Descripcion1 {
+
+    color: rgb(46, 19, 201);
 }
+
+.photo {
+    border-radius: 10px;
+    max-width: 100%;
+    width: 50%;
+    padding-left: 10%;
+    }
