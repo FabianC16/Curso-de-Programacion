@@ -1,64 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Desing Mastery  Holiday Plan</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
- <nav>
-    <div class="nav_bar">
-        <div class="nav_header">
-            <div class="nav_logo">
-                <a href="#">Travel<span>.com</span></a>
-            </div>
-            <div class="nav_menu_btn" id="menu-btn">
-                <i class="ri-menu-line"></i>
-            </div>
-        </div>
-        <ul class="nav_links" id="nav-links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">BOOKING</a></li>
-            <li><a href="#">CONTAC US</a></li>
-        </ul>
-    </div>
- </nav>
- <div class="container">
-    <div class="content">
-        <h1>Plan your<br />Holiday</h1>
-        <h4>Explore WorldWide</h4>
-        <h2>GET 20% OFF</h2>
-        <h6>Winter Voucher Code <span>TravelSafe20</span></h6>
-        <form action="/">
-        <input type="text" placeholder="Enter Destination">
-        <button><i class="ri-arrow-right-s-line"></i></button>
-        </form>
-        <p>
-            We are passionate about uncovering the wonders of our diverse world
-          and sharing them with you. Our mission is to inspire a sense of
-          discovery, and stories that make our planet unique.
-        </p>
-        <div class="socials">
-            <span>
-                <a href="#"><i class="ri-facebook-fill"></i></a>
-            </span>
-             <span>
-                <a href="#"><i class="ri-twitter-fill"></i></a>
-            </span>
-             <span>
-                <a href="#"><i class="ri-instagram-line"></i></a>
-            </span>
-        </div>
-    </div>
- </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="stilo.css"/>
+    <title>Portafolio Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header"></header>
 
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="main.js"></script>
-</body>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+            <div class="home__content">
+                <span class="home__subtitle">Bienvenidos a Mi Mundo</span>
+                <h1 class="home__title">
+                    Hola, soy Fabian Cardenas <span>Desarrollador de JS.</span>
+                </h1>
+            </div>
+            <img src="Modulo 3\portafolio\img\home.jpg" alt="" class="home__img">
+        </div>
+      </section>
+
+      <!--=============== ABOUT ===============-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+            <img src="Modulo 3\portafolio\img\about me.jpg" alt="" class="about__img">
+
+            <div class="about__content">
+
+                <h2 class="section__title">Sobre Mí</h2>
+                <p class="about__description">Soy un desarrollador apasionado por JavaScript, con un enfoque creativo y funcional para construir experiencias web dinámicas. Me especializo en transformar ideas en interfaces limpias, interactivas y eficientes. Siempre busco aprender más, optimizar cada línea de código y crear soluciones que realmente marquen la diferencia.
+                </p>
+
+                <div class="tabs__btns">
+                    <span class="tabs__btn tab__active" data-target="#skills">Habilidades Principales</span>
+                    <span class="tabs__btn" data-target="#Experience">Experiencias</span>
+                    <span class="tabs__btn" data-target="#education">Educacion y Certificacion</span>
+                </div>
+
+                <div class="tabs__content">
+                    <div class="tabs__item tab__active" data-content id="skills">
+                        <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>Lógica de programación:</span> <span>Resolución eficiente de problemas complejos.</span>
+                            </p>
+
+                             <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>Manipulación del DOM:</span> Creación de interfaces interactivas y dinámicas.
+                            </p>
+
+                             <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>UI/UX:</span> Diseño de interfaces intuitivas y centradas en el usuario.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs__item " data-content id="Experience">
+                        <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>Desarrollo de calculadoras científicas:</span> Creación de interfaces funcionales con operaciones avanzadas usando JavaScript, HTML y CSS.
+                            </p>
+
+                             <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>Proyectos interactivos con DOM:</span> Implementación de funcionalidades dinámicas como menús, validaciones de formularios y efectos visuales personalizados.
+                            </p>
+
+                             <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>Diseño de experiencias tipo videojuego:</span> Desarrollo de pequeñas interfaces interactivas inspiradas en videojuegos como The Last of Us, combinando lógica, estilo visual y fluidez en la experiencia de usuario.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs__item " data-content id="education">
+                        <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>Ingeniero en Sistemas:</span> Universidad Nacional Experimental Politécnica de la Fuerza Armada (UNEFA)
+Graduado con sólidos conocimientos en desarrollo de software, lógica computacional y estructuras de datos.
+                            </p>
+
+                             <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>Curso de Programación En Logros:</span> Formación práctica en HTML, CSS y JavaScript, centrado en el desarrollo de sitios web funcionales y dinámicos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--=============== SERVICES ===============-->
+      <section class="services section" id="services">
+        <h2 class="section__title">Mi Increible Servicios</h2>
+        <p class="section__description">Creo interfaces web dinámicas y responsivas con JavaScript, enfocadas en funcionalidad y buena experiencia de usuario.           
+        </p>
+
+        <div class="services__containe container grid">
+            <div class="services__item">
+                <i class="uil uil-rss-interface services__icon"></i>
+
+                <h3 class="services__title">Estrategia Empresarial</h3>
+                <p class="services__description">Apoyo a emprendedores y negocios a traducir sus objetivos en soluciones digitales, alineando el desarrollo web con sus metas estratégicas.
+                </p>
+            </div>
+
+             <div class="services__item">
+                <i class="uil uil-layer-group services__icon"></i>
+
+                <h3 class="services__title">Desarrollo web</h3>
+                <p class="services__description">Diseño y construyo sitios funcionales y atractivos con HTML, CSS y JavaScript, adaptados a las necesidades de cada proyecto.
+                </p>
+            </div>
+
+             <div class="services__item">
+                <i class="uil uil-users-alt services__icon"></i>
+
+                <h3 class="services__title">Marketing e Informes</h3>
+                <p class="services__description">Desarrollo estrategias digitales que fortalecen la presencia en línea y elaboro informes precisos para medir resultados y optimizar el rendimiento web
+                </p>
+            </div>
+
+             <div class="services__item">
+                <i class="uil uil-desktop services__icon"></i>
+
+                <h3 class="services__title">Desarrollo movil</h3>
+                <p class="services__description">Diseño aplicaciones móviles funcionales y responsivas que brindan una experiencia fluida, adaptada a distintos dispositivos y necesidades del usuario.
+                </p>
+            </div>
+
+             <div class="services__item">
+                <i class="uil uil-dashboard services__icon"></i>
+
+                <h3 class="services__title">Optimización de Rendimiento Web</h3>
+                <p class="services__description">Me especializo en mejorar la velocidad y eficiencia de aplicaciones web para garantizar una experiencia rápida y fluida al usuario.
+                </p>
+            </div>
+
+             <div class="services__item">
+                <i class="uil uil-cloud-database-tree"></i>
+
+                <h3 class="services__title">Integración de APIs y Servicios Externos</h3>
+                <p class="services__description">Implemento conexiones eficientes entre aplicaciones y servicios externos, usando APIs RESTful, GraphQL o WebSockets para enriquecer funcionalidades y datos en tiempo real. Esto permite a tus proyectos comunicarse con otras plataformas sin problemas.
+                </p>
+            </div>
+        </div>
+      </section>
+
+      <!--=============== PORTFOLIO ===============-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Mis Ultimos Proyectos</h2>
+        <p class="section__description">He desarrollado aplicaciones web dinámicas usando JavaScript, enfocándome en la usabilidad, el rendimiento y un código limpio que cumple con los objetivos de cada cliente.
+        </p>
+
+        <div class="portfolio__container container grid">
+            <div class="portfolio__item">
+                <img src="Modulo 3\portafolio\img\portfolio-1.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <p class="portfolio__subtitle">Desarrollo</p>
+                    <h3 class="portfolio__titlle">Diseño Web</h3>
+                    <p class="portfolio__description">Últimos proyectos en diseño web con JavaScript, enfocados en interfaces dinámicas y responsivas
+                    </p>
+                </div>
+            </div>
+
+            <div class="portfolio__item">
+                <img src="Modulo 3\portafolio\img\portfolio-2.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <p class="portfolio__subtitle">Diseño de Productos</p>
+                    <h3 class="portfolio__titlle">Desarrollador de Aplicaciones</h3>
+                    <p class="portfolio__description">Desarrollo de aplicaciones enfocadas en rendimiento, usabilidad y experiencia del usuario.
+                    </p>
+                </div>
+            </div>
+
+            <div class="portfolio__item">
+                <img src="Modulo 3\portafolio\img\portfolio-3.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <p class="portfolio__subtitle">Aplicaciones</p>
+                    <h3 class="portfolio__titlle">Diseños de Photoshop</h3>
+                    <p class="portfolio__description">Diseños creativos en Photoshop enfocados en estética, detalle y comunicación visual.
+                    </p>
+                </div>
+            </div>
+
+            <div class="portfolio__item">
+                <img src="Modulo 3\portafolio\img\portfolio-4.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <p class="portfolio__subtitle">Prototipado UX/UI</p>
+                    <h3 class="portfolio__titlle">Prototipo interactivo para app de finanzas</h3>
+                    <p class="portfolio__description">Diseñé un prototipo en Figma centrado en la experiencia de usuario, con flujos intuitivos y pantallas responsivas para una app de control de gastos personales.
+                    </p>
+                </div>
+            </div>
+
+            <div class="portfolio__item">
+                <img src="Modulo 3\portafolio\img\portfolio-5.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <p class="portfolio__subtitle">Animaciones Web</p>
+                    <h3 class="portfolio__titlle">Microinteracciones para tienda online</h3>
+                    <p class="portfolio__description">Implementé animaciones suaves con CSS y JavaScript para mejorar la interacción del usuario en una tienda online, haciendo más atractiva y fluida la navegación.
+                    </p>
+                </div>
+            </div>
+
+            <div class="portfolio__item">
+                <img src="Modulo 3\portafolio\img\portfolio-6.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <p class="portfolio__subtitle">Automatización de Procesos</p>
+                    <h3 class="portfolio__titlle">Script para organizar archivos automáticamente</h3>
+                    <p class="portfolio__description">Script para organizar archivos automáticamente usando JavaScript y Node.js, que clasifica documentos en carpetas según su tipo y fecha, facilitando la gestión y el acceso rápido a los archivos importantes.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--=============== CONTACT ===============-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+            <div class="contact__content">
+                <h2 class="section__titlle">Contratame</h2>
+                <p class="contact__description">Estoy disponible par trabajo freelance. Contactame por telefono:
+                    <a href="+58 04246214848">0424-6214848</a> o correo electronico: <a href="Fabiam:fabianomana1615@gmail.com">fabianomana1615@gmail.com</a>
+                </p>
+
+                <form class="contact__form" id="contact-form">
+                    <div class="contact__form-input">
+                        <input type="text" name="name" placeholder="Your name" class="contact__input" id="contact-name">
+                    </div>
+
+                    <div class="contact__form-input">
+                        <input type="email" name="emil" placeholder="Your e-mail" class="contact__input" id="contact-email">
+                    </div>
+
+                    <div class="contact__form-input">
+                        <input type="" name="subject" placeholder="Write a subject" class="contact__input" id="contact-subject">
+                    </div>
+
+                    <div class="contact__form-input">
+                        <textarea name="message" id="contact-menssage" 
+                        class="contact__input textarea" placeholder="Your message"></textarea>
+                        </textarea>
+                    </div>
+
+                    <input type="submit" value="submit" class="btn">
+
+                    <p class="error__menssage" id="error-menssage"></p>
+                </form>
+            </div>
+
+            <img src="Modulo 3\portafolio\img\home.jpg" alt="" class="contact__img">
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container grid" >
+            <a href="index-html" class="footer__logo">j <span>o</span>ne</a>
+
+            <div class="footer__socials">
+                <a href="www.facebook.com" target="_blank"
+                 class="footer__socials-link">
+                 <i class="uil uil-facebook-f"></i>
+                </a>
+
+                <a href="www.twitter.com" target="_blank"
+                 class="footer__socials-link">
+                 <i class="uil uil-twitter"></i>
+                </a>
+
+                <a href="www.instagram.com" target="_blank"
+                 class="footer__socials-link">
+                 <i class="uil uil-instagram"></i>
+                </a>
+            </div>
+
+            <p class="footer__copyright">&copy; 2025. All rights reserved</p>
+        </div>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+
+    <!--=============== EMAIL JS ===============-->
+    <script src=""></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="Modulo 3\portafolio\main.js"></script>
+  </body>
 </html>
